@@ -26,7 +26,7 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
+  background-color: pink;
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
 }
@@ -38,17 +38,23 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(7, minmax(25%, auto));
+  display: run-in;
+  overflow: auto;
+  grid-auto-flow: row dense;
   width: var(--max-width);
-  max-width: 100%;
+  max-width: 75%;
+  justify-content: center;
+  align-items: center;
+  position: center;
 }
 
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
+  background: lightyellow;
+  border: 5px black;
   transition: background 200ms, border 200ms;
+  margin: 30px
 }
 
 .card span {
@@ -57,16 +63,16 @@
 }
 
 .card h2 {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.7rem;
 }
 
 .card p {
   margin: 0;
   opacity: 0.6;
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   line-height: 1.5;
-  max-width: 30ch;
+  max-width: 100ch;
 }
 
 .center {
