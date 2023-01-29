@@ -51,38 +51,56 @@ export default function Home() {
         </div>
         <form action = "https://docs.google.com/spreadsheets/d/1HtBHjh6cH0AXkaZb7hH-aGvog5l1oRGYlkZgejYrfrI/edit#gid=0" method = "post">
           <div className={styles.grid}>
-            <label for = "first">First Name: </label>
-            <input type = "text" id = "first" name = "first" required/>
-
-            <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-              </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-            </a>
-
-            <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+            <h2 className= {styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
+              label for = "first">First Name:
+              <input type = "text" id = "first" name = "first" required/>
+            </h2>
+            <h2 className= {styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
+              label for = "last">Last Name:
+              <input type = "text" id = "last" name = "last" required />
+            </h2>
+            <h2 className= {styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
+              label for = "goal_1">First Goal:
+              <input type = "text" id = "goal_1" name = "goal_1" />
+            </h2>
+            <h2 className= {styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
+              label for = "goal_2">Second Goal:
+              <input type = "text" id = "goal_2" name = "goal_2" />
+            </h2>
+            <h2 className= {styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
+              label for = "goal_3">Third Goal:
+              <input type = "text" id = "goal_3" name = "goal_3" />
+            </h2>
+            <h2 className= {styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
+              label for = "number">Phone Number:
+              <input type = "number" id = "number" name = "number"
+              required minlength = "10" maxlength = "10" pattern = "[0-9]"
+              title = "Please only input the numbers, not including any special characters"/>
+              <p className= {styles.card}>
+                Please only input numbers, no hyphons
               </p>
-            </a>
-          </div>
-        </form>
+            </h2>
+            <h2 className= {styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
+              label for = "time">Time of Day:
+              <input type = "time" id = "time" name = "time" />
+            </h2>
+            <button type = "submit">Submit</button>
+          </div>  
+         </form>
       </main>
     </>
   )
