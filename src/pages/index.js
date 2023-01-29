@@ -86,7 +86,7 @@ export default function Home() {
               rel="noopener noreferrer"
               label for = "number">Phone Number:
               <input type = "number" id = "number" name = "number"
-              required minlength = "10" maxlength = "10" pattern = "[0-9]"
+              required minlength = "10" maxLength = "10" pattern = "[0-9]"
               title = "Please only input the numbers, not including any special characters"/>
               <p className= {styles.card}>
                 Please only input numbers, no hyphons
