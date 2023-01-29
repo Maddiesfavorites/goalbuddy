@@ -49,7 +49,7 @@ export default function Home() {
         That's it!
         </p>
         </div>
-        <form action = "https://docs.google.com/spreadsheets/d/1HtBHjh6cH0AXkaZb7hH-aGvog5l1oRGYlkZgejYrfrI/edit#gid=0" method = "post">
+        <form action = "supabase.js" method= "post">
           <div className={styles.grid}>
             <h2 className= {styles.card}
               target="_blank"
