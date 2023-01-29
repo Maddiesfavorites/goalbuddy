@@ -15,21 +15,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
+        <span className={styles.description}>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
+             Goal Buddy
           </p>
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
+            <a>
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
+                alt="Sunshine Logo"
                 className={styles.vercelLogo}
                 width={100}
                 height={24}
@@ -37,42 +30,39 @@ export default function Home() {
               />
             </a>
           </div>
-        </div>
+        </span>
 
         <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
+          <p> To sign up for daily affirmations to help achieve your goals to be sent to you via text message, all you 
+        need to do is:
+        <br></br>
+        <br></br>
+        1. Give us your name and phone number
+        <br></br>
+        <br></br>
+        2. List your top 3 goals
+        <br></br>
+        <br></br>
+        3. Indicate what time of the day you want to receive the text
+        <br></br>
+        <br></br>
+        That's it!
+        </p>
         </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+        <form action = "https://docs.google.com/spreadsheets/d/1HtBHjh6cH0AXkaZb7hH-aGvog5l1oRGYlkZgejYrfrI/edit#gid=0" method = "post"></form>
+          <div className={styles.grid}>
+            <a
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
+            >
+              <h2 className={inter.className}>
               Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
+              </h2>
+              <p className={inter.className}>
               Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+              </p>
+            </a>
 
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -117,6 +107,7 @@ export default function Home() {
             </p>
           </a>
         </div>
+        </form>
       </main>
     </>
   )
